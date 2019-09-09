@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">People Ads</string>
+    <string name="next">Next</string>
+    <string name="easy">Easy</string>
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="back">Back</string>
+</resources>
