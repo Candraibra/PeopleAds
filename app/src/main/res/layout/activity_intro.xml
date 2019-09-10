@@ -9,7 +9,7 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/screen_pager"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/tab_indicator"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,40 +25,52 @@
         android:paddingStart="25dp"
         android:paddingEnd="25dp"
         android:text="@string/get_started"
+        android:layout_marginBottom="76dp"
         android:textColor="@color/colorWhite"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/screen_pager"
         app:layout_constraintEnd_toEndOf="@+id/screen_pager"
         app:layout_constraintStart_toStartOf="@+id/screen_pager" />
 
-    <Button
+    <ImageView
         android:id="@+id/btnNext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/btn_gradient"
-        android:drawableEnd="@drawable/ic_next_white"
-        android:drawablePadding="16dp"
-        android:fontFamily="@font/avenir_demi"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:text="@string/next"
-        android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="70dp"
+        android:background="#00000000"
+        android:contentDescription="@string/next"
+        android:src="@drawable/next_red"
+        app:layout_constraintBottom_toBottomOf="@+id/screen_pager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!-- <Button
+         android:id="@+id/btnNext"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginEnd="16dp"
+         android:layout_marginBottom="16dp"
+         android:background="@drawable/btn_gradient"
+         android:drawableEnd="@drawable/ic_next_white"
+         android:drawablePadding="16dp"
+         android:fontFamily="@font/avenir_demi"
+         android:paddingStart="20dp"
+         android:paddingEnd="20dp"
+         android:text="@string/next"
+         android:textColor="@color/colorWhite"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent" /> -->
 
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minHeight="?attr/actionBarSize"
-        android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
+        android:minHeight="?attr/actionBarSize"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:tabIndicatorHeight="0dp"
-        app:tabBackground="@drawable/indicator_selector" />
+        app:tabBackground="@drawable/indicator_selector"
+        app:tabIndicatorHeight="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,11 +4,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -21,7 +20,8 @@ import java.util.List;
 public class IntroActivity extends AppCompatActivity {
     IntroViewPagerAdapter introViewPagerAdapter;
     TabLayout tab_indicator;
-    Button btnNext, btnStart;
+    Button btnStart;
+    ImageView btnNext;
     int position = 0;
     Animation btnAnimation;
     private ViewPager screenPager;
@@ -31,9 +31,9 @@ public class IntroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         //fullscreen request
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+        //      WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         if (restorePrefData()) {
 
@@ -46,10 +46,11 @@ public class IntroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_intro);
 
         //isi list
+        String desc = getString(R.string.lorem);
         final List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("Easy Going", "lorem ipsum bla kamu lagi apa dimana dengan siapa mudah kan yey", R.drawable.img1));
-        mList.add(new ScreenItem("Fast Delivery", "lorem ipsum bla kamu lagi apa dimana dengan siapa mudah kan yey", R.drawable.img2));
-        mList.add(new ScreenItem("Fast Payment", "lorem ipsum bla kamu lagi apa dimana dengan siapa mudah kan yey", R.drawable.img3));
+        mList.add(new ScreenItem("Easy", desc, R.drawable.img1));
+        mList.add(new ScreenItem("Fast", desc, R.drawable.img2));
+        mList.add(new ScreenItem("Efficient", desc, R.drawable.img3));
 
         //inisialisasi views
         tab_indicator = findViewById(R.id.tab_indicator);

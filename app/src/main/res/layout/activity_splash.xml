@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     tools:context=".SplashActivity">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="60dp"
         android:layout_height="60dp"
+        android:contentDescription="@string/app_name"
         android:src="@drawable/group"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
