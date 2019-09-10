@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -21,7 +21,7 @@ public class IntroActivity extends AppCompatActivity {
     IntroViewPagerAdapter introViewPagerAdapter;
     TabLayout tab_indicator;
     Button btnStart;
-    ImageView btnNext;
+    TextView btnNext,btnSkip;
     int position = 0;
     Animation btnAnimation;
     private ViewPager screenPager;
@@ -37,7 +37,7 @@ public class IntroActivity extends AppCompatActivity {
 
         if (restorePrefData()) {
 
-            Intent mainActivity = new Intent(getApplicationContext(),LoginActivity.class );
+            Intent mainActivity = new Intent(getApplicationContext(), LoginActivity.class);
             startActivity(mainActivity);
             finish();
 
@@ -56,6 +56,7 @@ public class IntroActivity extends AppCompatActivity {
         tab_indicator = findViewById(R.id.tab_indicator);
         screenPager = findViewById(R.id.screen_pager);
         btnNext = findViewById(R.id.btnNext);
+        btnSkip = findViewById(R.id.btnSkip);
         btnStart = findViewById(R.id.btnStart);
         btnAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.btn_animation);
         //setup viewPager
@@ -80,17 +81,25 @@ public class IntroActivity extends AppCompatActivity {
                 }
             }
         });
+        //btn start click action
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);
                 savePrefsData();
                 finish();
 
             }
         });
+        // skip button click action
 
+        btnSkip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screenPager.setCurrentItem(mList.size());
+            }
+        });
         tab_indicator.addOnTabSelectedListener(new TabLayout.BaseOnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -114,6 +123,7 @@ public class IntroActivity extends AppCompatActivity {
     private void loadLastScreen() {
         btnNext.setVisibility(View.INVISIBLE);
         btnStart.setVisibility(View.VISIBLE);
+        btnSkip.setVisibility(View.INVISIBLE);
         btnStart.setAnimation(btnAnimation);
         tab_indicator.setVisibility(View.INVISIBLE);
 
@@ -125,10 +135,11 @@ public class IntroActivity extends AppCompatActivity {
         editor.putBoolean("ifIntroIsOpened", true);
         editor.apply();
     }
+
     private boolean restorePrefData() {
 
-        SharedPreferences pref = getApplicationContext().getSharedPreferences("introOpened",MODE_PRIVATE);
-        return pref.getBoolean("ifIntroIsOpened",false);
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("introOpened", MODE_PRIVATE);
+        return pref.getBoolean("ifIntroIsOpened", false);
 
     }
 

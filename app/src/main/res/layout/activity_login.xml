@@ -98,12 +98,39 @@
         app:layout_constraintTop_toBottomOf="@+id/verifyOtp" />
 
     <ImageView
+        android:id="@+id/btnFinger"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="70dp"
         android:src="@drawable/fingerprint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/orFingerprint"/>
+        app:layout_constraintTop_toBottomOf="@+id/orFingerprint" />
+
+    <TextView
+        android:id="@+id/txtDontHaveAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/avenir_medium"
+        android:text="@string/don_t_have_an_account"
+        android:textColor="@color/colorFontSub"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/btnSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/avenir_demi"
+        android:text="@string/signup"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
