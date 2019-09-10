@@ -6,4 +6,10 @@
     <string name="get_started">GET STARTED</string>
     <string name="back">Back</string>
     <string name="peopleads">PeopleAds</string>
+    <string name="log_in">Log In</string>
+    <string name="enter_your_mobile_number">Enter your mobile phone</string>
+    <string name="the_number_that_was_registered_at_that_time">the number that was registered at that time</string>
+    <string name="enter_your_number">enter your number</string>
+    <string name="verify_otp">VERIFY OTP</string>
+    <string name="or_fingerprint_login">Or Fingerprint Login</string>
 </resources>

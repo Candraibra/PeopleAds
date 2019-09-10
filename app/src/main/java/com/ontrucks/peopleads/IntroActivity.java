@@ -37,7 +37,7 @@ public class IntroActivity extends AppCompatActivity {
 
         if (restorePrefData()) {
 
-            Intent mainActivity = new Intent(getApplicationContext(),MainActivity.class );
+            Intent mainActivity = new Intent(getApplicationContext(),LoginActivity.class );
             startActivity(mainActivity);
             finish();
 
