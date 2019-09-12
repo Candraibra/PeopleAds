@@ -15,6 +15,7 @@ import java.util.List;
 public class IntroViewPagerAdapter extends PagerAdapter {
     private Context mContext;
     private List<ScreenItem> mListScreen;
+
     public IntroViewPagerAdapter(Context mContext, List<ScreenItem> mListScreen) {
         this.mContext = mContext;
         this.mListScreen = mListScreen;
@@ -23,8 +24,8 @@ public class IntroViewPagerAdapter extends PagerAdapter {
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
-        LayoutInflater inflater =(LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View layoutScreen = inflater.inflate(R.layout.layout_screen,null);
+        LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View layoutScreen = inflater.inflate(R.layout.layout_screen, null);
         ImageView imgIlus = layoutScreen.findViewById(R.id.iv_ilus);
         TextView title = layoutScreen.findViewById(R.id.title1);
         TextView description = layoutScreen.findViewById(R.id.description);

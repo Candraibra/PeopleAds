@@ -21,7 +21,7 @@ public class IntroActivity extends AppCompatActivity {
     IntroViewPagerAdapter introViewPagerAdapter;
     TabLayout tab_indicator;
     Button btnStart;
-    TextView btnNext,btnSkip;
+    TextView btnNext, btnSkip;
     int position = 0;
     Animation btnAnimation;
     private ViewPager screenPager;
