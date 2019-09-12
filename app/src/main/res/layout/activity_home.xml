@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fillViewport="true"
+    tools:context=".HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bgprimary"
+            app:layout_constraintDimensionRatio="H,16:10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bgtransparent"
+            app:layout_constraintDimensionRatio="H,29:21"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/greating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="65dp"
+            android:fontFamily="@font/avenir_medium"
+            android:text="@string/good_morning"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:fontFamily="@font/avenir_demi"
+            android:text="@string/candra_ibra_sanie"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/greating" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorTransparent"
+            android:src="@drawable/ic_notifications"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="160dp"
+            android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+            android:layout_marginEnd="35dp"
+            android:outlineSpotShadowColor="@color/colorPrimary"
+            android:background="@color/colorBg"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="30dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/logoDoKu"
+                    android:layout_width="74dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo_doku"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@color/colorFontSub"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/logoDoKu" />
+
+                <TextView
+                    android:id="@+id/rp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="@string/rp"
+                    android:textColor="@color/colorFontSub"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/total"
+                    app:layout_constraintEnd_toStartOf="@id/total"
+                    app:layout_constraintTop_toTopOf="@+id/total" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/avenir_demi"
+                    android:text="@string/_100_000"
+                    android:textColor="@color/colorFontBlack"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@id/separator"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imgTopUp"
+                    android:layout_width="44dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/topup"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/separator" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_demi"
+                    android:text="@string/top_up"
+                    android:textColor="@color/colorFontSub"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/imgTopUp"
+                    app:layout_constraintStart_toStartOf="@id/imgTopUp"
+                    app:layout_constraintTop_toBottomOf="@id/imgTopUp" />
+
+                <ImageView
+                    android:id="@+id/imgPay"
+                    android:layout_width="44dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/pay"
+                    app:layout_constraintEnd_toStartOf="@+id/imgReward"
+                    app:layout_constraintStart_toEndOf="@+id/imgTopUp"
+                    app:layout_constraintTop_toBottomOf="@id/separator" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_demi"
+                    android:text="@string/pay"
+                    android:textColor="@color/colorFontSub"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/imgPay"
+                    app:layout_constraintStart_toStartOf="@id/imgPay"
+                    app:layout_constraintTop_toBottomOf="@id/imgPay" />
+                <ImageView
+                    android:id="@+id/imgReward"
+                    android:layout_width="44dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/rewards"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/separator" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_demi"
+                    android:text="@string/rewards"
+                    android:textColor="@color/colorFontSub"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/imgReward"
+                    app:layout_constraintStart_toStartOf="@id/imgReward"
+                    app:layout_constraintTop_toBottomOf="@id/imgReward" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

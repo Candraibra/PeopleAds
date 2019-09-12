@@ -25,6 +25,13 @@
     <string name="your_password">Your password?</string>
     <string name="dummy_pass">***</string>
     <string name="confirm_your_password">Confirm your password</string>
-    <string name="signup">SignUp</string>
     <string name="i_have_read_the_terms_and_conditions">i have read the terms and conditions</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="good_morning">Good Morning,</string>
+    <string name="candra_ibra_sanie">Candra Ibra Sanie</string>
+    <string name="rp">RP</string>
+    <string name="_100_000">100.000</string>
+    <string name="top_up">Top Up</string>
+    <string name="pay">Pay</string>
+    <string name="rewards">Rewards</string>
 </resources>
