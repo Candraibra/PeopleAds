@@ -34,4 +34,6 @@
     <string name="top_up">Top Up</string>
     <string name="pay">Pay</string>
     <string name="rewards">Rewards</string>
+    <string name="nearby">Nearby</string>
+    <string name="scan">Scan</string>
 </resources>
