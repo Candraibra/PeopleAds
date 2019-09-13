@@ -107,11 +107,11 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_marginTop="70dp"
+            android:layout_marginBottom="70dp"
             android:contentDescription="@string/or_fingerprint_login"
             android:src="@drawable/fingerprint"
-            android:layout_marginBottom="70dp"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@id/txtDontHaveAcc"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/orFingerprint" />
 
