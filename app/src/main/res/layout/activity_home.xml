@@ -204,11 +204,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:layout_marginEnd="10dp"
             app:cardBackgroundColor="@color/colorWhite"
             app:cardCornerRadius="20dp"
             app:cardElevation="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/cardScan"
+            app:layout_constraintEnd_toStartOf="@+id/cardCamera"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardInfo">
 
@@ -219,8 +218,8 @@
 
                 <ImageView
                     android:id="@+id/btnNearby"
-                    android:layout_width="100dp"
-                    android:layout_height="128dp"
+                    android:layout_width="70dp"
+                    android:layout_height="98dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="20dp"
@@ -241,18 +240,57 @@
                     app:layout_constraintTop_toBottomOf="@id/btnNearby" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/cardScan"
+            app:layout_constraintStart_toEndOf="@id/cardNearby"
+            app:layout_constraintTop_toBottomOf="@id/cardInfo">
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintCamera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/btnCamera"
+                    android:layout_width="70dp"
+                    android:layout_height="98dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/camera"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_demi"
+                    android:paddingBottom="10dp"
+                    android:text="@string/take"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@id/btnCamera"
+                    app:layout_constraintStart_toStartOf="@id/btnCamera"
+                    app:layout_constraintTop_toBottomOf="@id/btnCamera" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/cardScan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
             android:layout_marginTop="40dp"
             app:cardBackgroundColor="@color/colorWhite"
             app:cardCornerRadius="20dp"
             app:cardElevation="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/cardNearby"
+            app:layout_constraintStart_toEndOf="@+id/cardCamera"
             app:layout_constraintTop_toBottomOf="@id/cardInfo">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -261,8 +299,8 @@
 
                 <ImageView
                     android:id="@+id/btnScan"
-                    android:layout_width="100dp"
-                    android:layout_height="128dp"
+                    android:layout_width="70dp"
+                    android:layout_height="98dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="20dp"
