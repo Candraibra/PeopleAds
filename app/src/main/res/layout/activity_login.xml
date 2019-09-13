@@ -91,7 +91,7 @@
         android:layout_marginTop="26dp"
         android:fontFamily="@font/avenir_medium"
         android:text="@string/or_fingerprint_login"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorFontSub"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
