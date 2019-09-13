@@ -293,6 +293,19 @@
             android:background="@drawable/rounded_top"
             app:layout_constraintTop_toBottomOf="@id/cardScan">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/avenir_demi"
+                android:shadowColor="@color/colorFontSub"
+                android:text="@string/latest_activity"
+                android:textColor="@color/colorWhite"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.Guideline

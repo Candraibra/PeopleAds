@@ -37,4 +37,5 @@
     <string name="nearby">Nearby</string>
     <string name="scan">Scan</string>
     <string name="input_your_verification_code">Input Your Verification Code</string>
+    <string name="latest_activity">Latest Activity</string>
 </resources>
