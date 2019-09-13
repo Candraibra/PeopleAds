@@ -36,4 +36,5 @@
     <string name="rewards">Rewards</string>
     <string name="nearby">Nearby</string>
     <string name="scan">Scan</string>
+    <string name="input_your_verification_code">Input Your Verification Code</string>
 </resources>
