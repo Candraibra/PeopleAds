@@ -39,4 +39,7 @@
     <string name="input_your_verification_code">Input Your Verification Code</string>
     <string name="latest_activity">Latest Activity</string>
     <string name="take">Take</string>
+    <string name="time_left">Time Left :</string>
+    <string name="_03_49_30">03.49.30</string>
+    <string name="ongoing">Ongoing</string>
 </resources>

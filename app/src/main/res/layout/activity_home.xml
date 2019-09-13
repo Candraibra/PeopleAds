@@ -23,6 +23,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:scaleType="fitXY"
@@ -203,10 +204,11 @@
             android:id="@+id/cardNearby"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginStart="30dp"
             app:cardBackgroundColor="@color/colorWhite"
             app:cardCornerRadius="20dp"
             app:cardElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardMain"
             app:layout_constraintEnd_toStartOf="@+id/cardCamera"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardInfo">
@@ -218,8 +220,8 @@
 
                 <ImageView
                     android:id="@+id/btnNearby"
-                    android:layout_width="70dp"
-                    android:layout_height="98dp"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="20dp"
@@ -234,20 +236,22 @@
                     android:fontFamily="@font/avenir_demi"
                     android:paddingBottom="10dp"
                     android:text="@string/nearby"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="@id/btnNearby"
                     app:layout_constraintStart_toStartOf="@id/btnNearby"
                     app:layout_constraintTop_toBottomOf="@id/btnNearby" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardCamera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             app:cardBackgroundColor="@color/colorWhite"
             app:cardCornerRadius="20dp"
+
             app:cardElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@id/cardMain"
             app:layout_constraintEnd_toStartOf="@+id/cardScan"
             app:layout_constraintStart_toEndOf="@id/cardNearby"
             app:layout_constraintTop_toBottomOf="@id/cardInfo">
@@ -281,14 +285,16 @@
                     app:layout_constraintTop_toBottomOf="@id/btnCamera" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardScan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             app:cardBackgroundColor="@color/colorWhite"
             app:cardCornerRadius="20dp"
+
             app:cardElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@id/cardMain"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cardCamera"
             app:layout_constraintTop_toBottomOf="@id/cardInfo">
@@ -299,8 +305,8 @@
 
                 <ImageView
                     android:id="@+id/btnScan"
-                    android:layout_width="70dp"
-                    android:layout_height="98dp"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="20dp"
@@ -315,7 +321,7 @@
                     android:fontFamily="@font/avenir_demi"
                     android:paddingBottom="10dp"
                     android:text="@string/scan"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="@id/btnScan"
                     app:layout_constraintStart_toStartOf="@id/btnScan"
                     app:layout_constraintTop_toBottomOf="@id/btnScan" />
@@ -324,62 +330,107 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="35dp"
-            android:paddingBottom="20dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="230dp"
             android:background="@drawable/rounded_top"
-            app:layout_constraintTop_toBottomOf="@id/cardScan">
+            android:paddingBottom="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:layout_editor_absoluteX="35dp">
 
             <TextView
-                android:id="@+id/txtLatest"
+                android:id="@+id/txtOngoing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/avenir_demi"
                 android:shadowColor="@color/colorFontSub"
-                android:text="@string/latest_activity"
+                android:text="@string/ongoing"
                 android:textColor="@color/colorWhite"
                 android:textSize="23sp"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cardTshirt1"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardTshirt1"
-                android:layout_width="130dp"
-                android:layout_height="170dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="30dp"
+                android:background="@color/colorWhite"
                 app:cardCornerRadius="16dp"
+                app:cardMaxElevation="10dp"
                 app:layout_constraintEnd_toStartOf="@id/cardTshirt2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtLatest">
+                app:layout_constraintTop_toBottomOf="@id/txtOngoing">
 
-                <ImageView
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/tshirt" />
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/tshirt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:src="@drawable/tshirt"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_demi"
+                        android:paddingBottom="10dp"
+                        android:text="@string/_03_49_30"
+                        android:textColor="@color/colorAccent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tshirt1" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardTshirt2"
-                android:layout_width="130dp"
-                android:layout_height="170dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="30dp"
                 app:cardCornerRadius="16dp"
+                app:cardMaxElevation="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/cardTshirt1"
-                app:layout_constraintTop_toBottomOf="@id/txtLatest">
+                app:layout_constraintTop_toBottomOf="@id/txtOngoing">
 
-                <ImageView
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/tshirt" />
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/tshirt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:src="@drawable/tshirt"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtTime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_demi"
+                        android:paddingBottom="10dp"
+                        android:text="@string/_03_49_30"
+                        android:textColor="@color/colorAccent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tshirt2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
