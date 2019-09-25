@@ -30,7 +30,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="16dp"
-            android:fontFamily="@font/avenir_medium"
+            android:fontFamily="@font/avenir_regular"
             android:gravity="center_horizontal"
             android:text="@string/terms_and_use"
             android:textSize="20sp"
@@ -51,6 +51,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/headingTnc" />
+
         <TextView
             android:id="@+id/headingTnc2"
             android:layout_width="wrap_content"
@@ -58,7 +59,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="16dp"
-            android:fontFamily="@font/avenir_medium"
+            android:fontFamily="@font/avenir_regular"
             android:gravity="center_horizontal"
             android:text="@string/terms_and_conditions2"
             android:textSize="20sp"
@@ -79,6 +80,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/headingTnc2" />
+
         <Button
             android:id="@+id/logIn"
             android:layout_width="match_parent"
@@ -86,17 +88,16 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="46dp"
             android:layout_marginEnd="50dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/btn_gradient_full_rounded"
             android:fontFamily="@font/avenir_demi"
             android:text="@string/i_agree_with_terms_and_conditions"
             android:textColor="@color/colorWhite"
             android:textSize="12sp"
-            android:layout_marginBottom="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textTnc2" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

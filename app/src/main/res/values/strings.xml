@@ -58,5 +58,7 @@
     <string name="i_agree_with_terms_and_conditions">I Agree with terms and conditions</string>
     <string name="terms_and_use">Terms And Use</string>
     <string name="terms_and_conditions2">Terms And Conditions</string>
+    <string name="please_enter_your_id_number">Please enter your ID number</string>
+    <string name="enter_your_verification_code_in_email">Enter your verification code in email</string>
 
 </resources>
