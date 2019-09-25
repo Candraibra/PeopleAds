@@ -46,4 +46,5 @@
     <string name="please_login_for_continue">Please login for continue</string>
     <string name="eg_halo_gmail_com">eg: halo@gmail.com</string>
     <string name="eg_pass1234">eg: pass1234</string>
+    <string name="please_enter_your_email">Please enter your email</string>
 </resources>
