@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".SignupActivity2">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -25,17 +25,19 @@
             android:fontFamily="@font/avenir_medium"
             android:singleLine="true" />
     </com.google.android.material.textfield.TextInputLayout>
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintBottom_toTopOf="@id/btnCamera"
-    android:text="@string/please_scan_your_id_card"
-app:layout_constraintTop_toBottomOf="@id/edt_IDNumber"
-    android:fontFamily="@font/avenir_demi"
-    android:textColor="@color/colorFontSub"
-    android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenir_demi"
+        android:text="@string/please_scan_your_id_card"
+        android:textColor="@color/colorFontSub"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/btnCamera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_IDNumber" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/btnCamera"
         android:layout_width="150dp"
@@ -43,6 +45,7 @@ app:layout_constraintTop_toBottomOf="@id/edt_IDNumber"
         android:background="@drawable/btn_gradient"
         app:layout_constraintBottom_toBottomOf="@id/signUp_Continue"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edt_IDNumber">
 
@@ -62,10 +65,50 @@ app:layout_constraintTop_toBottomOf="@id/edt_IDNumber"
         android:layout_marginBottom="26dp"
         android:background="@drawable/btn_gradient_full_rounded"
         android:fontFamily="@font/avenir_demi"
-        android:text="@string/continue_string"
+        android:text="@string/next"
         android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnCamera" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@id/signUp_Continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyCheckbox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i_agree_with"
+            app:layout_constraintBottom_toBottomOf="@id/checkbox"
+            app:layout_constraintStart_toEndOf="@id/checkbox"
+            app:layout_constraintTop_toTopOf="@id/checkbox" />
+
+        <TextView
+            android:id="@+id/txtTNC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:paddingStart="0dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/terms_and_conditions"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@id/checkbox"
+            app:layout_constraintStart_toEndOf="@id/text"
+            app:layout_constraintTop_toTopOf="@id/checkbox" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

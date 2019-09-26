@@ -10,8 +10,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:paddingBottom="50dp"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
 
         <TextView
             android:id="@+id/signup"
@@ -236,7 +236,7 @@
             android:layout_marginEnd="50dp"
             android:background="@drawable/btn_gradient_full_rounded"
             android:fontFamily="@font/avenir_demi"
-            android:text="@string/continue_string"
+            android:text="@string/next"
             android:textColor="@color/colorWhite"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
