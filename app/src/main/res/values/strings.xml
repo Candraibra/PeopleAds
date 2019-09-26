@@ -1,51 +1,22 @@
 <resources>
     <string name="app_name">People Ads</string>
-    <string name="next">Next</string>
-    <string name="easy">Easy</string>
     <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
-    <string name="get_started">GET STARTED</string>
-    <string name="back">Back</string>
     <string name="peopleads">PeopleAds</string>
     <string name="log_in">Log In</string>
-    <string name="enter_your_mobile_number">Enter your mobile phone</string>
-    <string name="the_number_that_was_registered_at_that_time">the number that was registered at that time</string>
-    <string name="enter_your_number">enter your number</string>
-    <string name="verify_otp">VERIFY OTP</string>
-    <string name="or_fingerprint_login">Or Fingerprint Login</string>
-    <string name="skip">Skip</string>
     <string name="signup">SignUp</string>
     <string name="don_t_have_an_account">Don\'t have an account?</string>
     <string name="sign_up">Sign Up</string>
-    <string name="this_is_your_username_display">This is your username display</string>
-    <string name="dummy">candraganteng123</string>
-    <string name="enter_your_email">Enter your email</string>
-    <string name="dummy_email">candra@haha.id</string>
-    <string name="your_phone_number">Your phone number</string>
-    <string name="dummy_phone">089999999999</string>
     <string name="your_password">Your password?</string>
-    <string name="dummy_pass">***</string>
     <string name="confirm_your_password">Confirm your password</string>
-    <string name="i_have_read_the_terms_and_conditions">i have read the terms and conditions</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="good_morning">Good Morning,</string>
     <string name="candra_ibra_sanie">Candra Ibra Sanie</string>
     <string name="rp">RP</string>
     <string name="_100_000">100.000</string>
-    <string name="top_up">Top Up</string>
-    <string name="pay">Pay</string>
     <string name="rewards">Rewards</string>
-    <string name="nearby">Nearby</string>
-    <string name="scan">Scan</string>
-    <string name="input_your_verification_code">Input Your Verification Code</string>
-    <string name="latest_activity">Latest Activity</string>
-    <string name="take">Take</string>
-    <string name="time_left">Time Left :</string>
-    <string name="_03_49_30">03.49.30</string>
     <string name="ongoing">Ongoing</string>
     <string name="_00_12_59">00.12.59</string>
     <string name="please_login_for_continue">Please login for continue</string>
-    <string name="eg_halo_gmail_com">eg: halo@gmail.com</string>
-    <string name="eg_pass1234">eg: pass1234</string>
     <string name="please_enter_your_email">Please enter your email</string>
     <string name="please_enter_your_full_name">Please enter your full name</string>
     <string name="please_enter_your_mobile_phone">Please enter your mobile phone</string>
@@ -59,9 +30,17 @@
     <string name="terms_and_use">Terms And Use</string>
     <string name="terms_and_conditions2">Terms And Conditions</string>
     <string name="please_enter_your_id_number">Please enter your ID number</string>
-    <string name="enter_your_verification_code_in_email">Enter your verification code in email</string>
     <string name="check_your_email">Check your email</string>
     <string name="available">Available</string>
     <string name="transfer">Transfer</string>
+    <string name="please_scan_your_id_card">Please scan your ID card</string>
+    <string name="home">Home</string>
+    <string name="chart">Chart</string>
+    <string name="history">History</string>
+    <string name="account">Account</string>
+    <string name="cart">Cart</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

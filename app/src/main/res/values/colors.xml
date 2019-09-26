@@ -6,8 +6,6 @@
     <color name="colorAccent">#FE4365</color>
     <color name="colorBg">#F4F5FA</color>
     <color name="colorTransparent">#00000000</color>
-    <color name="colorBgDark">#E4E6F3</color>
-    <color name="colorLightGreen">#88C425</color>
     <color name="colorFontBlack">#353535</color>
     <color name="colorFontSub">#777777</color>
     <color name="colorWhite">#ffffff</color>

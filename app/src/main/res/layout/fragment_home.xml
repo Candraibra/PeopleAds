@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +9,7 @@
     android:background="@color/colorBg"
     android:fillViewport="true"
     android:scrollbars="none"
-    tools:context=".HomeActivity">
+    tools:context=".HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -191,101 +193,57 @@
             tools:layout_editor_absoluteX="35dp">
 
             <TextView
-                android:id="@+id/txtOngoing"
+                android:id="@+id/txtAvailable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/avenir_demi"
+                android:fontFamily="@font/avenir_medium"
                 android:shadowColor="@color/colorFontSub"
                 android:text="@string/available"
                 android:textColor="@color/colorWhite"
                 android:textSize="23sp"
-                app:layout_constraintStart_toStartOf="@+id/cardTshirt1"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardTshirt1"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@color/colorWhite"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="10dp"
-                app:layout_constraintEnd_toStartOf="@id/cardTshirt2"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_available_adv"
+                android:layout_width="wrap_content"
+                android:layout_height="260dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtOngoing">
+                app:layout_constraintTop_toBottomOf="@id/txtAvailable"
+                tools:listitem="@layout/item_list_adv" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/tshirt1"
-                        android:layout_width="match_parent"
-                        android:layout_height="165dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/tshirt"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/txtTime"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/avenir_demi"
-                        android:paddingBottom="10dp"
-                        android:text="@string/_00_12_59"
-                        android:textColor="@color/colorAccent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/tshirt1" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardTshirt2"
-                android:layout_width="150dp"
+            <TextView
+                android:id="@+id/txtOngoing"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="30dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/cardTshirt1"
-                app:layout_constraintTop_toBottomOf="@id/txtOngoing">
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/avenir_medium"
+                android:shadowColor="@color/colorFontSub"
+                android:text="@string/ongoing"
+                android:textColor="@color/colorWhite"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_available_adv" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_ongoing_adv"
+                android:layout_width="wrap_content"
+                android:layout_height="260dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtOngoing"
+                tools:listitem="@layout/item_list_adv" />
 
-                    <ImageView
-                        android:id="@+id/tshirt2"
-                        android:layout_width="match_parent"
-                        android:layout_height="165dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/tshirt"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/txtTime2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/avenir_demi"
-                        android:paddingBottom="10dp"
-                        android:text="@string/_03_49_30"
-                        android:textColor="@color/colorAccent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/tshirt2" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
+

@@ -15,14 +15,11 @@ public class SignupActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup2);
         Button btnContinue = findViewById(R.id.signUp_Continue);
-        btnContinue.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Verify_Activity.class);
-                startActivity(intent);
-                finish();
+        btnContinue.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), Verify_Activity.class);
+            startActivity(intent);
+            finish();
 
-            }
         });
     }
 }

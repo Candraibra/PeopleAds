@@ -14,9 +14,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Tnc"></activity>
         <activity android:name=".Verify_Activity" />
-        <activity
-            android:name=".HomeActivity"
-            android:theme="@style/AppThemeHome" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".SignupActivity2" />
         <activity android:name=".LoginActivity" />
@@ -26,7 +23,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppThemeHome" />
     </application>
 
 </manifest>
