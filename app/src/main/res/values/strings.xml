@@ -61,5 +61,7 @@
     <string name="please_enter_your_id_number">Please enter your ID number</string>
     <string name="enter_your_verification_code_in_email">Enter your verification code in email</string>
     <string name="check_your_email">Check your email</string>
+    <string name="available">Available</string>
+    <string name="transfer">Transfer</string>
 
 </resources>
