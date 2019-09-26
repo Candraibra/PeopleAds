@@ -60,5 +60,6 @@
     <string name="terms_and_conditions2">Terms And Conditions</string>
     <string name="please_enter_your_id_number">Please enter your ID number</string>
     <string name="enter_your_verification_code_in_email">Enter your verification code in email</string>
+    <string name="check_your_email">Check your email</string>
 
 </resources>
