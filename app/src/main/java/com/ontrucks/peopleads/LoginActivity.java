@@ -14,7 +14,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         TextView btnSignUp = findViewById(R.id.btnSignUp);
-        // Button verifyOtp = findViewById(R.id.verifyOtp);
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,13 +23,5 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
-        /** verifyOtp.setOnClickListener(new View.OnClickListener() {
-        @Override public void onClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-        startActivity(intent);
-        finish();
-
-        }
-        }); **/
     }
 }
