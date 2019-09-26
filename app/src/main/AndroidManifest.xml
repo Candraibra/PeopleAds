@@ -25,7 +25,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppThemeHome" />
+            android:theme="@style/AppThemeHome"/>
     </application>
 
 </manifest>

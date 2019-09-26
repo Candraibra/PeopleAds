@@ -30,7 +30,7 @@
         android:layout_marginTop="26dp"
         android:fontFamily="@font/avenir_demi"
         android:text="@string/please_login_for_continue"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorFontSub"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login" />
