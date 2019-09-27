@@ -9,4 +9,5 @@
     <color name="colorFontBlack">#353535</color>
     <color name="colorFontSub">#777777</color>
     <color name="colorWhite">#ffffff</color>
+    <color name="whiteDarker">#dddddd</color>
 </resources>

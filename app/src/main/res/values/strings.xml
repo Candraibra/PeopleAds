@@ -44,5 +44,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="next">Next</string>
     <string name="i_agree_with">I Agree with</string>
+    <string name="mayora_tshirt">Mayora Tshirt</string>
+    <string name="requirements">Requirements</string>
+    <string name="date">Date</string>
 
 </resources>
