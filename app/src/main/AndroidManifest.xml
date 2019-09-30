@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Tnc"></activity>
+        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".Notification" />
+        <activity android:name=".Tnc" />
         <activity android:name=".Verify_Activity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".SignupActivity2" />
@@ -20,12 +22,13 @@
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppThemeHome"/>
+            android:theme="@style/AppThemeHome" />
     </application>
 
 </manifest>

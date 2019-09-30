@@ -14,8 +14,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:fitsSystemWindows="true"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
 
         <ImageView
             android:layout_width="0dp"
@@ -63,11 +63,11 @@
             app:layout_constraintTop_toBottomOf="@+id/greating" />
 
         <ImageButton
+            android:id="@+id/btnNotif"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="26dp"
-            android:layout_marginEnd="16dp"
             android:background="@color/colorTransparent"
+            android:padding="16dp"
             android:src="@drawable/ic_notifications"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -145,7 +145,7 @@
                     android:layout_height="48dp"
                     android:layout_marginTop="13dp"
                     android:src="@drawable/pay"
-                    app:layout_constraintEnd_toStartOf="@+id/imgReward"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/separator" />
 
@@ -160,26 +160,6 @@
                     app:layout_constraintStart_toStartOf="@id/imgTransfer"
                     app:layout_constraintTop_toBottomOf="@id/imgTransfer" />
 
-                <ImageView
-                    android:id="@+id/imgReward"
-                    android:layout_width="44dp"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="13dp"
-                    android:src="@drawable/rewards"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/imgTransfer"
-                    app:layout_constraintTop_toBottomOf="@id/separator" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/avenir_demi"
-                    android:text="@string/rewards"
-                    android:textColor="@color/colorFontSub"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@id/imgReward"
-                    app:layout_constraintStart_toStartOf="@id/imgReward"
-                    app:layout_constraintTop_toBottomOf="@id/imgReward" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>

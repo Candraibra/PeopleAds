@@ -32,11 +32,12 @@ public class HistoryFragment extends Fragment {
 
         return inflater.inflate(R.layout.fragment_history, container, false);
     }
+
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         mShimmerViewContainer = view.findViewById(R.id.shimmerContainer);
-       mShimmerViewContainer.startShimmer();
+        mShimmerViewContainer.startShimmer();
     }
 
 }
