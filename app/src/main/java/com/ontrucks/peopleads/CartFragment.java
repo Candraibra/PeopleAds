@@ -1,22 +1,23 @@
 package com.ontrucks.peopleads;
 
 
-import android.content.Context;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
-import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
+import com.facebook.shimmer.ShimmerFrameLayout;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class CartFragment extends Fragment {
-
+    private ShimmerFrameLayout mShimmerViewContainer;
 
     public CartFragment() {
         // Required empty public constructor
@@ -31,4 +32,10 @@ public class CartFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_cart, container, false);
     }
 
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        mShimmerViewContainer = view.findViewById(R.id.shimmerContainer);
+        mShimmerViewContainer.startShimmer();
+    }
 }

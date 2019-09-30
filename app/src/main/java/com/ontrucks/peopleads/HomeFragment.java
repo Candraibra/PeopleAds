@@ -12,12 +12,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.facebook.shimmer.ShimmerFrameLayout;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class HomeFragment extends Fragment {
 
+    private ShimmerFrameLayout mShimmerViewContainer, mShimmerViewContainer2;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -33,6 +36,12 @@ public class HomeFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        mShimmerViewContainer = view.findViewById(R.id.shimmerContainer);
+        mShimmerViewContainer.startShimmer();
+
+        mShimmerViewContainer2 = view.findViewById(R.id.shimmerContainer2);
+        mShimmerViewContainer2.startShimmer();
 
         ImageButton btnNotif = view.findViewById(R.id.btnNotif);
         btnNotif.setOnClickListener(view1 -> {
