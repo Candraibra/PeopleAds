@@ -39,8 +39,6 @@
     <string name="history">History</string>
     <string name="account">Account</string>
     <string name="cart">Cart</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="next">Next</string>
     <string name="i_agree_with">I Agree with</string>
@@ -48,5 +46,21 @@
     <string name="requirements">Requirements</string>
     <string name="date">Date</string>
     <string name="notifications">Notifications</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="candoan_yahhuu_com">candoan@yahhuu.com</string>
+    <string name="number_phone">Number Phone</string>
+    <string name="_082222299992">082222299992</string>
+    <string name="klapagading_tanah_abang_jakarta_pusat">Klapagading Tanah Abang Jakarta Pusat</string>
+    <string name="address">Address</string>
+    <string name="bca">BCA</string>
+    <string name="bank">Bank</string>
+    <string name="_93517538193">93517538193</string>
+    <string name="bank_number">Bank Number</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="payment_information">Payment Information</string>
 
 </resources>
