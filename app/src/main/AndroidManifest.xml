@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.UpdateActivity"></activity>
+        <activity android:name=".activity.TransferActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/AppThemeHome"/>
+        <activity android:name=".activity.UpdateActivity" />
         <activity
             android:name=".activity.DetailNotifActivity"
             android:theme="@style/AppThemeHome" />

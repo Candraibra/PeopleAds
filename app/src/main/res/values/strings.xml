@@ -67,5 +67,7 @@
     <string name="verification_code">Verification Code</string>
     <string name="please_type_the_verification_code_sent_to">Please type the verification code sent to</string>
     <string name="update">Update</string>
+    <string name="from">From</string>
+    <string name="nominal">Nominal</string>
 
 </resources>

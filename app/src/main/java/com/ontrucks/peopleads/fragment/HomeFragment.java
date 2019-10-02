@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.ontrucks.peopleads.R;
 import com.ontrucks.peopleads.activity.NotificationActivity;
+import com.ontrucks.peopleads.activity.TransferActivity;
 
 
 /**
@@ -48,6 +50,12 @@ public class HomeFragment extends Fragment {
         ImageButton btnNotif = view.findViewById(R.id.btnNotif);
         btnNotif.setOnClickListener(view1 -> {
             Intent intent = new Intent(getContext(), NotificationActivity.class);
+            startActivity(intent);
+        });
+
+        ImageView btnTransfer = view.findViewById(R.id.btnTransfer);
+        btnTransfer.setOnClickListener(view1 -> {
+            Intent intent = new Intent(getContext(), TransferActivity.class);
             startActivity(intent);
         });
 

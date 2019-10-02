@@ -136,7 +136,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/imgTransfer"
+                    android:id="@+id/btnTransfer"
                     android:layout_width="44dp"
                     android:layout_height="48dp"
                     android:layout_marginTop="13dp"
@@ -152,9 +152,9 @@
                     android:text="@string/transfer"
                     android:textColor="@color/colorFontSub"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@id/imgTransfer"
-                    app:layout_constraintStart_toStartOf="@id/imgTransfer"
-                    app:layout_constraintTop_toBottomOf="@id/imgTransfer" />
+                    app:layout_constraintEnd_toEndOf="@id/btnTransfer"
+                    app:layout_constraintStart_toStartOf="@id/btnTransfer"
+                    app:layout_constraintTop_toBottomOf="@id/btnTransfer" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
