@@ -1,28 +1,27 @@
-package com.ontrucks.peopleads;
+package com.ontrucks.peopleads.fragment;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
+import com.ontrucks.peopleads.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment {
+public class HistoryFragment extends Fragment {
 
-    private ShimmerFrameLayout mShimmerViewContainer, mShimmerViewContainer2;
+    private ShimmerFrameLayout mShimmerViewContainer;
 
-    public HomeFragment() {
+    public HistoryFragment() {
         // Required empty public constructor
     }
 
@@ -31,7 +30,8 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+
+        return inflater.inflate(R.layout.fragment_history, container, false);
     }
 
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -39,17 +39,6 @@ public class HomeFragment extends Fragment {
 
         mShimmerViewContainer = view.findViewById(R.id.shimmerContainer);
         mShimmerViewContainer.startShimmer();
-
-        mShimmerViewContainer2 = view.findViewById(R.id.shimmerContainer2);
-        mShimmerViewContainer2.startShimmer();
-
-        ImageButton btnNotif = view.findViewById(R.id.btnNotif);
-        btnNotif.setOnClickListener(view1 -> {
-            Intent intent = new Intent(getContext(), NotificationActivity.class);
-            startActivity(intent);
-        });
-
     }
-
 
 }

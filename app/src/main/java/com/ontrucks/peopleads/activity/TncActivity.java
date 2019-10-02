@@ -1,4 +1,4 @@
-package com.ontrucks.peopleads;
+package com.ontrucks.peopleads.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,7 +6,10 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Tnc extends AppCompatActivity {
+import com.ontrucks.peopleads.R;
+import com.ontrucks.peopleads.activity.SignupActivity2;
+
+public class TncActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

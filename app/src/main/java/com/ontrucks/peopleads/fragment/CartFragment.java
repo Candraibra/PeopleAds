@@ -1,4 +1,4 @@
-package com.ontrucks.peopleads;
+package com.ontrucks.peopleads.fragment;
 
 
 import android.os.Bundle;
@@ -11,16 +11,16 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
+import com.ontrucks.peopleads.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HistoryFragment extends Fragment {
-
+public class CartFragment extends Fragment {
     private ShimmerFrameLayout mShimmerViewContainer;
 
-    public HistoryFragment() {
+    public CartFragment() {
         // Required empty public constructor
     }
 
@@ -28,9 +28,9 @@ public class HistoryFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
 
-        return inflater.inflate(R.layout.fragment_history, container, false);
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_cart, container, false);
     }
 
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -39,5 +39,4 @@ public class HistoryFragment extends Fragment {
         mShimmerViewContainer = view.findViewById(R.id.shimmerContainer);
         mShimmerViewContainer.startShimmer();
     }
-
 }

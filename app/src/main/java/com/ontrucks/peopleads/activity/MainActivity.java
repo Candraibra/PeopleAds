@@ -1,4 +1,4 @@
-package com.ontrucks.peopleads;
+package com.ontrucks.peopleads.activity;
 
 import android.os.Bundle;
 
@@ -6,6 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.ontrucks.peopleads.fragment.AccountFragment;
+import com.ontrucks.peopleads.fragment.CartFragment;
+import com.ontrucks.peopleads.fragment.HistoryFragment;
+import com.ontrucks.peopleads.fragment.HomeFragment;
+import com.ontrucks.peopleads.R;
 
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener

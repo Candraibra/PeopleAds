@@ -1,9 +1,11 @@
-package com.ontrucks.peopleads;
+package com.ontrucks.peopleads.activity;
 
 import android.os.Bundle;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.ontrucks.peopleads.R;
 
 public class DetailNotifActivity extends AppCompatActivity {
 

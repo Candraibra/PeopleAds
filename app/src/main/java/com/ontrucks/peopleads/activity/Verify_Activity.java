@@ -1,4 +1,4 @@
-package com.ontrucks.peopleads;
+package com.ontrucks.peopleads.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.goodiebag.pinview.Pinview;
+import com.ontrucks.peopleads.R;
 
 public class Verify_Activity extends AppCompatActivity {
 

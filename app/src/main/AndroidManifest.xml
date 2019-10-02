@@ -12,18 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.UpdateActivity"></activity>
         <activity
-            android:name=".DetailNotifActivity"
+            android:name=".activity.DetailNotifActivity"
             android:theme="@style/AppThemeHome" />
         <activity
-            android:name=".NotificationActivity"
+            android:name=".activity.NotificationActivity"
             android:theme="@style/AppThemeHome" />
-        <activity android:name=".Tnc" />
-        <activity android:name=".Verify_Activity" />
-        <activity android:name=".SignupActivity" />
-        <activity android:name=".SignupActivity2" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".activity.TncActivity" />
+        <activity android:name=".activity.Verify_Activity" />
+        <activity android:name=".activity.SignupActivity" />
+        <activity android:name=".activity.SignupActivity2" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,7 +32,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:theme="@style/AppThemeHome" />
     </application>
 

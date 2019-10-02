@@ -1,4 +1,4 @@
-package com.ontrucks.peopleads;
+package com.ontrucks.peopleads.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.ontrucks.peopleads.R;
 
 public class SignupActivity2 extends AppCompatActivity {
 
@@ -22,7 +24,7 @@ public class SignupActivity2 extends AppCompatActivity {
 
         });
         txtTNC.setOnClickListener(view -> {
-            Intent intent = new Intent(getApplicationContext(), Tnc.class);
+            Intent intent = new Intent(getApplicationContext(), TncActivity.class);
             startActivity(intent);
             finish();
 

@@ -1,8 +1,10 @@
-package com.ontrucks.peopleads;
+package com.ontrucks.peopleads.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.ontrucks.peopleads.R;
 
 public class SplashActivity extends Activity {
 
