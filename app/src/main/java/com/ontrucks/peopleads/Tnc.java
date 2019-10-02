@@ -17,7 +17,6 @@ public class Tnc extends AppCompatActivity {
             Intent intent = new Intent(getApplicationContext(), SignupActivity2.class);
             startActivity(intent);
             finish();
-
         });
     }
 }

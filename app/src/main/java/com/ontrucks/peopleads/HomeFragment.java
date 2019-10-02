@@ -45,9 +45,8 @@ public class HomeFragment extends Fragment {
 
         ImageButton btnNotif = view.findViewById(R.id.btnNotif);
         btnNotif.setOnClickListener(view1 -> {
-            Intent intent = new Intent(getContext(), DetailActivity.class);
+            Intent intent = new Intent(getContext(), NotificationActivity.class);
             startActivity(intent);
-
         });
 
     }

@@ -53,7 +53,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/avenir_demi"
-                android:text="@string/mayora_tshirt"
+                android:text="@string/start_date"
                 android:textColor="@color/colorFontBlack"
                 app:layout_constraintStart_toEndOf="@+id/product_image"
                 app:layout_constraintTop_toBottomOf="@id/product_name" />
@@ -70,13 +70,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/product_startDate" />
 
             <TextView
-                android:id="@+id/product_endDate"
+                android:id="@+id/product_fee"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/avenir_demi"
-                android:text="@string/mayora_tshirt"
+                android:text="@string/fee"
                 android:textColor="@color/colorFontBlack"
                 app:layout_constraintStart_toEndOf="@+id/product_image"
                 app:layout_constraintTop_toBottomOf="@id/product_startDateText" />
@@ -87,10 +87,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:fontFamily="@font/avenir_medium"
-                android:text="@string/_00_12_59"
+                android:text="@string/_100_000"
                 android:textColor="@color/colorFontBlack"
                 app:layout_constraintStart_toEndOf="@+id/product_image"
-                app:layout_constraintTop_toBottomOf="@+id/product_endDate" />
+                app:layout_constraintTop_toBottomOf="@+id/product_fee" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

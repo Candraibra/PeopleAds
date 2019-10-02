@@ -62,5 +62,9 @@
     <string name="bank_number">Bank Number</string>
     <string name="personal_info">Personal Info</string>
     <string name="payment_information">Payment Information</string>
+    <string name="fee">Fee</string>
+    <string name="start_date">Start Date</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="please_type_the_verification_code_sent_to">Please type the verification code sent to</string>
 
 </resources>

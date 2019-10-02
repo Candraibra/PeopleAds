@@ -12,8 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailActivity"></activity>
-        <activity android:name=".Notification" />
+        <activity
+            android:name=".DetailNotifActivity"
+            android:theme="@style/AppThemeHome" />
+        <activity
+            android:name=".NotificationActivity"
+            android:theme="@style/AppThemeHome" />
         <activity android:name=".Tnc" />
         <activity android:name=".Verify_Activity" />
         <activity android:name=".SignupActivity" />
